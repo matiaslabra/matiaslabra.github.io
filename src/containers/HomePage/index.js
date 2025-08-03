@@ -13,7 +13,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import A from '../../components/A';
 import H2 from '../../components/H2';
 import MobileStickyListTitle from './MobileStickyListTitle';
-// import MobileListTitleHolder from "./MobileListTitleHolder";
 import TitleLine from './TitleLine';
 import List from '../../components/List';
 import RightSection from './RightSection';
@@ -48,15 +47,6 @@ export default function HomePage() {
     offsetPx: -16,
     sectionElementRefs: sectionRefsForScroll, // Array of References to DOM elements
   });
-
-  // const scrollToSection = sectionKey => e => {
-  //   e.preventDefault(); //prevent url updating and jump to section
-  //   let elem = sectionRefsForScroll[sectionKey];
-  //   elem.current.scrollIntoView({
-  //     behavior: 'smooth', // smooth scroll
-  //     block: 'start' // the upper border of the element will be aligned at the top of the visible part of the window of the scrollable area.
-  //   })
-  // };
 
   return (
     <>

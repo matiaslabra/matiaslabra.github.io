@@ -13,12 +13,12 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider bun run react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider bun run react-scripts build",
     "deploy": "./deploy.sh",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettify": "prettier --write"
+    "test": "bun run react-scripts test",
+    "eject": "bun run react-scripts eject",
+    "prettify": "bun run prettier --write"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Switch, Route, Router } from 'react-router-dom';
 import history from '../../utils/history';
 
-import HomePage from '../HomePage/Loadable';
+import HomePage from '../HomePage';
 
 const AppWrapper = styled.div`
   display: flex;
