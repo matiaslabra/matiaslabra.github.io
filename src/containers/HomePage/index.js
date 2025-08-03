@@ -67,7 +67,7 @@ export default function HomePage() {
           </Title>
           <SubTitle ref={sectionRefsForScroll[1]}>
             <p>
-              Software Engineer based in Adelaide
+              Chilean Software Engineer based in Adelaide, Australia.
             </p>
           </SubTitle>
           <LinkContainer>
