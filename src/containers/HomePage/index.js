@@ -3,8 +3,8 @@ import useScrollSpy from 'react-use-scrollspy';
 //Animation
 import homePageAnimation from './animation';
 // Data
-import projects from '../../data/projects';
-import clients from '../../data/clients';
+import projects from '../../data/projects.json';
+import clients from '../../data/clients.json';
 
 //Components
 import Header from '../../components/Header';
@@ -67,19 +67,7 @@ export default function HomePage() {
           </Title>
           <SubTitle ref={sectionRefsForScroll[1]}>
             <p>
-              I am a Software Engineer currently looking for a Web Developer
-              position in Brisbane, Australia. From exposing new endpoints to
-              creating a new{' '}
-              <A
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://reactjs.org/"
-              >
-                React.js
-              </A>{' '}
-              component, I would love a role where I can contribute to the team
-              solving problems, advance my skills as a developer and learn
-              cutting edge technologies.
+              Software Engineer based in Adelaide
             </p>
           </SubTitle>
           <LinkContainer>

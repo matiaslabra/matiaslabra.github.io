@@ -14,7 +14,7 @@ function Card({ item, onClickAction }) {
     >
       <Tagline>
         {item.language
-          ? `${item.language.join(' - ')} ${item.url ? '| open sourced ' : ''}`
+          ? `${item.language.join(' - ')} ${item.url}`
           : ''}
       </Tagline>
       <H3>{item.name}</H3>

@@ -32,34 +32,6 @@ describe('<Card />', () => {
     ).not.toBeNull();
   });
 
-  it('should render "text" if item has an url', () => {
-    let text = '| open sourced';
-    const { container } = render(
-      <Card
-        item={{
-          ...item,
-          url: 'https://github.com/matiaslabra/servicetracker',
-        }}
-      />,
-    );
-    expect(
-      getByText(container, (content) => content.endsWith(text)),
-    ).not.toBeNull();
-  });
-
-  it('should not render "text" if item has not an url', () => {
-    let text = '| open sourced';
-    const { queryByText } = render(
-      <Card
-        item={{
-          ...item,
-          url: '',
-        }}
-      />,
-    );
-    expect(queryByText(text)).toBeNull();
-  });
-
   it('should render the items name', () => {
     const { queryByText } = render(<Card item={item} />);
     expect(queryByText(item.name)).not.toBeNull();
